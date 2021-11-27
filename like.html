@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Acme|Dancing+Script|Inconsolata|Pacifico|Shadows+Into+Light|Spicy+Rice&display=swap" rel="stylesheet">			<link rel="stylesheet" type="text/css" href="mystyle.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="style.css">-->
+	<title>Home</title>
+	<style>
+		.h3{
+			font-family: 'Spicy Rice', cursive;
+		}
+		p{
+			font-family: 'Acme', sans-serif;
+		}
+	</style>
+  </head>
+  <body class="bg-white">
+	<nav class="navbar navbar-expand-sd bg-light navbar-light fixed-top">
+      <a class="navbar-brand" href="#">
+          <img src="1.jpg" alt="logo" style="width:70px;border-radius:30%"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="final_1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li> 
+            <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Other Options</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="signin.html">Login</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="registration.html">SignUp</a>
+				</div>
+			</li>
+        </ul>
+      </div>  
+    </nav>  
+	
+	<br><br>
+	
+	<div class="container">
+	<br><br><br>
+		<center>
+			<div class="container-fluid">
+				<div class="jumbotron outline-primary">
+					<div class="h3 text-danger">Likes Count</div>
+					<p>
+						<br><strong>Solar Water Mall          : </strong><span id="likeBio"></span><br>
+						<br><strong>Dirt Detector             : </strong><span id="likeNano"></span><br>
+						<br><strong>Intelligent Street Lights : </strong><span id="likeQuan"></span><br>
+						<br><strong>3D Printer                : </strong><span id="likePrint"></span><br>
+						<br><strong>Neuromorphic Chips        : </strong><span id="likeChips"></span><br>
+						<br><strong>Organic Radical Batteries : </strong><span id="likeBatt"></span><br>
+						<br><strong>Hyperloop Trains          : </strong><span id="likeTrain"></span><br>
+						<br><strong>Bezel Less Phones         : </strong><span id="likePhone"></span><br>
+						<br><strong>Virtual Reality Headsets  : </strong><span id="likeHead"></span><br>
+						<br><strong>Agile Robots              : </strong><span id="likeBot"></span><br>
+
+					</p>
+				</div>
+			</div>
+		</center>
+	</div>
+	
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		(function(){
+			var a=localStorage.getItem("likeBio");
+			var b=localStorage.getItem("likeNano");
+			var c=localStorage.getItem("likeQuan");
+			var p=localStorage.getItem("likePrint");
+			var ch=localStorage.getItem("likeChips");
+			var batt=localStorage.getItem("likeBatt");
+			var train=localStorage.getItem("likeTrain");
+			var ph=localStorage.getItem("likePhone");
+			var h=localStorage.getItem("likeHead");
+			var bot=localStorage.getItem("likeBot");
+
+			document.getElementById("likeBio").innerHTML=""+a;
+			document.getElementById("likeNano").innerHTML=""+b;
+			document.getElementById("likeQuan").innerHTML=""+c;
+			document.getElementById("likePrint").innerHTML=""+p;
+			document.getElementById("likeChips").innerHTML=""+ch;
+			document.getElementById("likeBatt").innerHTML=""+batt;
+			document.getElementById("likeTrain").innerHTML=""+train;
+			document.getElementById("likePhone").innerHTML=""+ph;
+			document.getElementById("likeHead").innerHTML=""+h;
+			document.getElementById("likeBot").innerHTML=""+bot;
+
+		})();
+		
+	</script>
+ </body>
+</html>
